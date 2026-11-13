@@ -1,6 +1,6 @@
 import type { PortfolioContent } from "@/types/portfolio";
 
-// Conteúdo provisório: substitua projetos, imagens e contato pelos dados reais de Pedro.
+
 export const portfolioContent = {
   identity: "Pedro",
   navigation: [
@@ -11,7 +11,7 @@ export const portfolioContent = {
   hero: { eyebrow: "Desenvolvedor web", title: "Pedro dev web" },
   about: {
     text: "Olá, sou Pedro. Transformo ideias em experiências digitais com atenção aos detalhes, clareza e vontade de fazer bem-feito.",
-    technologies: ["JavaScript", "Next.js", "Java"],
+    technologies: ["JavaScript", "Next.js", "Java", "Spring Boot",],
   },
   projects: {
     heading: ["Projetos", "selecionados"],
@@ -37,7 +37,5 @@ export const portfolioContent = {
   footer: {
     heading: "Vamos criar algo juntos?",
     contactLabel: "Entre em contato ↗",
-    contactNote: "Destino de contato a fornecer",
-    signature: "Pedro · Desenvolvedor web",
   },
 } satisfies PortfolioContent;

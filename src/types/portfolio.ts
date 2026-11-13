@@ -24,7 +24,7 @@ export type PortfolioContent = {
   footer: {
     heading: string;
     contactLabel: string;
-    contactNote: string;
-    signature: string;
+    contactNote?: string;
+    signature?: string;
   };
 };
