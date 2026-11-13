@@ -374,6 +374,180 @@ a:focus-visible {
   transform: translateY(0);
 }
 
+@media (min-width: 768px) {
+  :root {
+    --page-gutter: 0;
+  }
+
+  body {
+    background-image: radial-gradient(
+      circle at 50% 12%,
+      #181818 0,
+      transparent 36rem
+    );
+  }
+
+  .page-shell {
+    width: min(calc(100% - clamp(3rem, 10vw, 12rem)), 52rem);
+  }
+
+  .site-header {
+    min-height: 5rem;
+    padding-block: 1rem;
+  }
+
+  .identity {
+    font-size: 1.45rem;
+  }
+
+  .nav-list {
+    gap: clamp(1.5rem, 3vw, 2.35rem);
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding-block: clamp(2.5rem, 6vw, 4.5rem) 1.75rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 1.5rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-title {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    font-size: clamp(6.75rem, 14vw, 9rem);
+    line-height: 0.7;
+  }
+
+  .hero-name {
+    grid-column: 1 / -1;
+  }
+
+  .hero-dev {
+    grid-column: 1;
+    width: auto;
+    margin-top: 0.18em;
+    padding-left: 0.7em;
+  }
+
+  .hero-web {
+    grid-column: 2;
+    justify-content: flex-start;
+    width: auto;
+    margin: 0.18em 0 0 -0.1em;
+    padding-right: 0;
+  }
+
+  .outline-d {
+    left: 0.08em;
+    bottom: -0.08em;
+  }
+
+  .outline-e {
+    top: -2.55em;
+    right: -0.05em;
+  }
+
+  .outline-w {
+    right: -0.12em;
+    bottom: -0.45em;
+  }
+
+  .about {
+    padding-block: 1.5rem 4rem;
+  }
+
+  .about p {
+    max-width: 24em;
+    font-size: clamp(1.65rem, 3.1vw, 2rem);
+    line-height: 1.08;
+  }
+
+  .technology-list {
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .technology-list li {
+    min-width: 7.25rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.82rem;
+  }
+
+  .projects {
+    padding-block: 0.75rem 4.25rem;
+  }
+
+  .projects-heading {
+    margin-bottom: 1.8rem;
+    font-size: clamp(3rem, 5vw, 3.65rem);
+    line-height: 0.95;
+  }
+
+  .projects-heading br {
+    display: none;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .project-card {
+    padding: 0.8rem;
+  }
+
+  .project-visual {
+    aspect-ratio: 1.6 / 1;
+  }
+
+  .mock-browser {
+    padding: 0.9rem 1rem;
+  }
+
+  .mock-nav {
+    margin-bottom: 1.6rem;
+  }
+
+  .mock-browser strong {
+    font-size: clamp(1.15rem, 2.25vw, 1.4rem);
+  }
+
+  .project-copy {
+    padding-bottom: 0.8rem;
+  }
+
+  .project-copy h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-copy p {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    min-height: 20rem;
+    padding-block: 1rem 3rem;
+  }
+
+  .footer h2 {
+    max-width: 8em;
+    font-size: clamp(3rem, 6vw, 4rem);
+  }
+
+  .contact-label {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+
+  .signature {
+    margin-top: 3.5rem;
+    font-size: 0.8rem;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .nav-list a,
   .identity {
@@ -388,6 +562,11 @@ a:focus-visible {
   .project-card:hover .mock-browser {
     transform: scale(1.035);
   }
+}
+
+.nav-list a:focus-visible,
+.identity:focus-visible {
+  opacity: 0.62;
 }
 
 @media (prefers-reduced-motion: reduce) {
