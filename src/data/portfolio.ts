@@ -1,6 +1,5 @@
 import type { PortfolioContent } from "@/types/portfolio";
 
-
 export const portfolioContent = {
   identity: "Pedro",
   navigation: [
@@ -11,7 +10,7 @@ export const portfolioContent = {
   hero: { eyebrow: "Desenvolvedor web", title: ["Pedro", "dev", "web"] },
   about: {
     text: "Olá, sou Pedro. Transformo ideias em experiências digitais com atenção aos detalhes, clareza e vontade de fazer bem-feito.",
-    technologies: ["JavaScript", "Next.js", "Java", "Spring Boot",],
+    technologies: ["JavaScript", "Next.js", "Java", "Spring Boot"],
   },
   projects: {
     heading: ["Projetos", "selecionados"],

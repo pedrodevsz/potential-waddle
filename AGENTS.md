@@ -7,7 +7,7 @@ Estas instruções orientam o trabalho neste repositório. O projeto é um portf
 ## Fonte de verdade
 
 - Siga as instruções mais recentes de Pedro e as referências visuais que ele fornecer.
-- Consulte PROMPT-CODEX.md para o contexto inicial de implementação.
+- Consulte PROMPT-CODEX.md para o contexto inicial de implementação, se disponível. Se estiver ausente, registre a ausência e siga as instruções disponíveis sem reconstruir seu conteúdo.
 - Não afirme ter analisado uma imagem ou arquivo que não esteja acessível.
 - Não reinvente a direção visual durante tarefas pontuais. Resolva detalhes pequenos com bom senso; apresente mudanças relevantes de direção antes de implementá-las.
 
