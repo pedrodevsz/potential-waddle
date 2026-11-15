@@ -28,7 +28,7 @@ export type PortfolioContent = {
   identity: string;
   navigation: NavigationItem[];
   hero: { eyebrow: string; title: [string, string, string] };
-  about: { text: string; technologies: string[] };
+  about: { text: string; flagAfter?: string; technologies: string[] };
   projects: { heading: [string, string]; items: Project[] };
   footer: {
     heading: string;

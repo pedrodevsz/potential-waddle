@@ -9,7 +9,8 @@ export const portfolioContent = {
   ],
   hero: { eyebrow: "Desenvolvedor web", title: ["Pedro", "dev", "web"] },
   about: {
-    text: "Olá, sou Pedro. Transformo ideias em experiências digitais com atenção aos detalhes, clareza e vontade de fazer bem-feito.",
+    text: "Olá, aqui estão alguns dos meus projetos. Sou brasileiro e desenvolvo software desde 2022. Falo inglês e um pouco de francês. Gosto muito de tecnologia e acredito que pequenos movimentos diários levam o ser humano ao seu grande objetivo.",
+    flagAfter: "Sou brasileiro",
     technologies: ["JavaScript", "Next.js", "Java", "Spring Boot"],
   },
   projects: {
