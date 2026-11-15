@@ -36,6 +36,14 @@ export const portfolioContent = {
   },
   footer: {
     heading: "Vamos criar algo juntos?",
-    contactLabel: "Entre em contato ↗",
+    contactLabel: "Entre em contato",
+    socialLinks: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/pedroenriqueps",
+      },
+      { label: "GitHub", href: "https://github.com/pedrodevsz" },
+      { label: "E-mail", href: "mailto:pedrodevs25@gmail.com" },
+    ],
   },
 } satisfies PortfolioContent;
