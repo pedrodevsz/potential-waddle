@@ -1,6 +1,5 @@
 import type { PortfolioContent } from "@/types/portfolio";
 
-
 export const portfolioContent = {
   identity: "Pedro",
   navigation: [
@@ -8,11 +7,11 @@ export const portfolioContent = {
     { id: "projects", label: "Projetos", href: "#projetos" },
     { id: "contact", label: "Vamos conversar ↗", href: "#contato" },
   ],
-  hero: { eyebrow: "Desenvolvedor web", title: "Pedro dev web" },
+  hero: { eyebrow: "Desenvolvedor web", title: ["Pedro", "dev", "web"] },
   about: {
     text: "Olá, aqui estão alguns dos meus projetos. Sou brasileiro e desenvolvo software desde 2022. Falo inglês e um pouco de francês. Gosto muito de tecnologia e acredito que pequenos movimentos diários levam o ser humano ao seu grande objetivo.",
     flagAfter: "Sou brasileiro",
-    technologies: ["JavaScript", "Next.js", "Java", "Spring Boot",],
+    technologies: ["JavaScript", "Next.js", "Java", "Spring Boot"],
   },
   projects: {
     heading: ["Projetos", "selecionados"],
@@ -37,6 +36,14 @@ export const portfolioContent = {
   },
   footer: {
     heading: "Vamos criar algo juntos?",
-    contactLabel: "Entre em contato ↗",
+    contactLabel: "Entre em contato",
+    socialLinks: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/pedroenriqueps",
+      },
+      { label: "GitHub", href: "https://github.com/pedrodevsz" },
+      { label: "E-mail", href: "mailto:pedrodevs25@gmail.com" },
+    ],
   },
 } satisfies PortfolioContent;

@@ -229,9 +229,15 @@ a:focus-visible {
   padding: 0.5rem var(--page-gutter) 3.5rem;
 }
 
+.projects-heading,
+.footer h2 {
+  font-family: inherit;
+  font-size: clamp(2.75rem, 13.5vw, 4rem);
+  font-weight: 700;
+}
+
 .projects-heading {
   margin: 0 0 1.65rem;
-  font-size: clamp(2.5rem, 12vw, 3.75rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
 }
@@ -334,8 +340,6 @@ a:focus-visible {
 .footer h2 {
   max-width: 9em;
   margin: 0 0 1.35rem;
-  font-size: clamp(2.75rem, 13.5vw, 4rem);
-  font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.07em;
 }
@@ -353,6 +357,57 @@ a:focus-visible {
   margin: 0.45rem 0 0;
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.contact-unavailable {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  list-style: none;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.social-links a:is(:hover, :focus, :focus-visible, :visited) {
+  text-decoration: none;
+}
+
+.social-links a[href^="https://www.linkedin.com/"] {
+  color: #60a5fa;
+}
+
+.social-links a[href^="https://github.com/"] {
+  color: #fff;
+}
+
+.social-links a[href^="mailto:"] {
+  color: #f87171;
+}
+
+.social-links a:focus-visible {
+  border-radius: 999px;
+}
+
+.social-links svg {
+  flex: 0 0 auto;
 }
 
 .signature {
@@ -482,8 +537,12 @@ a:focus-visible {
 
   .projects-heading {
     margin-bottom: 1.8rem;
-    font-size: clamp(3rem, 5vw, 3.65rem);
     line-height: 0.95;
+  }
+
+  .projects-heading,
+  .footer h2 {
+    font-size: clamp(3rem, 6vw, 4rem);
   }
 
   .projects-heading br {
@@ -534,7 +593,6 @@ a:focus-visible {
 
   .footer h2 {
     max-width: 8em;
-    font-size: clamp(3rem, 6vw, 4rem);
   }
 
   .contact-label {
@@ -549,6 +607,17 @@ a:focus-visible {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .social-links a {
+    transition:
+      transform 200ms ease,
+      box-shadow 200ms ease;
+  }
+
+  .social-links a:hover {
+    transform: scale(0.96);
+    box-shadow: 0 0 20px color-mix(in srgb, currentColor 18%, transparent);
+  }
+
   .nav-list a,
   .identity {
     transition: opacity 180ms ease;
@@ -570,6 +639,14 @@ a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .social-links a {
+    transition: none;
+  }
+
+  .social-links a:hover {
+    transform: none;
+  }
+
   html {
     scroll-behavior: auto;
   }
