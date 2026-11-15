@@ -379,6 +379,11 @@ a:focus-visible {
   border: 1px solid currentColor;
   border-radius: 999px;
   font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.social-links a:is(:hover, :focus, :focus-visible, :visited) {
+  text-decoration: none;
 }
 
 .social-links a[href^="https://www.linkedin.com/"] {
@@ -595,6 +600,17 @@ a:focus-visible {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .social-links a {
+    transition:
+      transform 200ms ease,
+      box-shadow 200ms ease;
+  }
+
+  .social-links a:hover {
+    transform: scale(0.96);
+    box-shadow: 0 0 20px color-mix(in srgb, currentColor 18%, transparent);
+  }
+
   .nav-list a,
   .identity {
     transition: opacity 180ms ease;
@@ -616,6 +632,14 @@ a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .social-links a {
+    transition: none;
+  }
+
+  .social-links a:hover {
+    transform: none;
+  }
+
   html {
     scroll-behavior: auto;
   }
