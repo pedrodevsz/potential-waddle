@@ -229,9 +229,15 @@ a:focus-visible {
   padding: 0.5rem var(--page-gutter) 3.5rem;
 }
 
+.projects-heading,
+.footer h2 {
+  font-family: inherit;
+  font-size: clamp(2.75rem, 13.5vw, 4rem);
+  font-weight: 700;
+}
+
 .projects-heading {
   margin: 0 0 1.65rem;
-  font-size: clamp(2.5rem, 12vw, 3.75rem);
   line-height: 0.88;
   letter-spacing: -0.065em;
 }
@@ -334,8 +340,6 @@ a:focus-visible {
 .footer h2 {
   max-width: 9em;
   margin: 0 0 1.35rem;
-  font-size: clamp(2.75rem, 13.5vw, 4rem);
-  font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.07em;
 }
@@ -482,8 +486,12 @@ a:focus-visible {
 
   .projects-heading {
     margin-bottom: 1.8rem;
-    font-size: clamp(3rem, 5vw, 3.65rem);
     line-height: 0.95;
+  }
+
+  .projects-heading,
+  .footer h2 {
+    font-size: clamp(3rem, 6vw, 4rem);
   }
 
   .projects-heading br {
@@ -534,7 +542,6 @@ a:focus-visible {
 
   .footer h2 {
     max-width: 8em;
-    font-size: clamp(3rem, 6vw, 4rem);
   }
 
   .contact-label {
