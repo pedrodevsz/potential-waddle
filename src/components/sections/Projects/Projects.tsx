@@ -10,9 +10,12 @@ export function Projects({ heading, projects }: ProjectsProps) {
       className="projects"
       aria-labelledby="projects-title"
     >
-      <h2 id="projects-title" className="projects-heading">
-        {heading[0]}
-        <br />
+      <h2
+        id="projects-title"
+        className="projects-heading"
+        aria-label={heading.join(" ")}
+      >
+        {heading[0]} <br />
         {heading[1]}
       </h2>
       <div className="project-list">

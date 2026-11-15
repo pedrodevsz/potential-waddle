@@ -18,8 +18,8 @@ export function Footer({
     >
       <h2 id="contact-title">{heading}</h2>
       <p className="contact-label">{contactLabel}</p>
-      <p className="contact-note">{contactNote}</p>
-      <p className="signature">{signature}</p>
+      {contactNote?.trim() && <p className="contact-note">{contactNote}</p>}
+      {signature?.trim() && <p className="signature">{signature}</p>}
     </Reveal>
   );
 }

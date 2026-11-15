@@ -8,7 +8,7 @@ export const portfolioContent = {
     { id: "projects", label: "Projetos", href: "#projetos" },
     { id: "contact", label: "Vamos conversar ↗", href: "#contato" },
   ],
-  hero: { eyebrow: "Desenvolvedor web", title: "Pedro dev web" },
+  hero: { eyebrow: "Desenvolvedor web", title: ["Pedro", "dev", "web"] },
   about: {
     text: "Olá, sou Pedro. Transformo ideias em experiências digitais com atenção aos detalhes, clareza e vontade de fazer bem-feito.",
     technologies: ["JavaScript", "Next.js", "Java", "Spring Boot",],
