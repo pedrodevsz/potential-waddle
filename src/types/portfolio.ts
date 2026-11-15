@@ -18,7 +18,7 @@ export type Project = {
 export type PortfolioContent = {
   identity: string;
   navigation: NavigationItem[];
-  hero: { eyebrow: string; title: string };
+  hero: { eyebrow: string; title: [string, string, string] };
   about: { text: string; technologies: string[] };
   projects: { heading: [string, string]; items: Project[] };
   footer: {
